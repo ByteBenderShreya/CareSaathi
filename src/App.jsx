@@ -110,7 +110,16 @@ export default function App(){
 function Auth({setUser, setCircles, circles, setCurrentPasscode}){
   const [mode,setMode]=useState('create'); const [name,setName]=useState(''); const [email,setEmail]=useState(''); const [pass,setPass]=useState('')
   const create=()=>{ if(!name||!email) return alert('Name & email required'); const p=Math.floor(100000+Math.random()*900000).toString(); const u={name, role:'Elder', email}; setCircles({...circles,[p]:{members:[u]}}); setUser(u); setCurrentPasscode(p); alert(`Circle Code: ${p} - Elder`)}
-  const join=()=>{ if(!circles[pass]) return alert('Invalid code'); const u={name, role:'Caretaker', email}; const up={...circles}; up[pass].members.push(u); setCircles(up); setUser(u); setCurrentPasscode(pass)}
+  const join=()=>{
+    if(!pass.trim()) return alert('Enter Circle Code');
+    const up={...circles};
+    if(!up[pass]) up[pass]={members:[]};
+    const u={name, role:'Caretaker', email}; 
+    up[pass].members.push(u); 
+    setCircles(up); 
+    setUser(u); 
+    setCurrentPasscode(pass)
+  }
   return (
     <div className="min-h-screen grid place-items-center p-4 relative"><div className="aurora-bg"></div>
       <div className="w-full max-w-[400px] bg-white border-[4px] border-black rounded-[36px] p-8 shadow-[0_12px_0_black] relative z-10">
