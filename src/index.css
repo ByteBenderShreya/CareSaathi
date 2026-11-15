@@ -1,0 +1,11 @@
+@import "tailwindcss";
+body{ font-family: ui-rounded, system-ui, sans-serif; background: #FFF8E7; }
+.aurora-bg{
+  position: fixed; inset: 0; z-index: -1;
+  background: 
+    radial-gradient(800px 600px at 15% 10%, #FFE066 0%, transparent 60%),
+    radial-gradient(700px 600px at 85% 10%, #D8B4FE 0%, transparent 60%),
+    radial-gradient(600px 500px at 50% 100%, #86EFAC 0%, transparent 60%);
+}
+.animate-bounce{ animation: bounce 2s infinite; }
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
