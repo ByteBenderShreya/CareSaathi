@@ -1,16 +1,34 @@
-# React + Vite
+# ❤️ CareSaathi
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+**Elder remains at the centre of their own healthcare decisions.**
 
-Currently, two official plugins are available:
+CareSaathi is a family caregiving platform built for Catalyst Hackathon that solves the biggest gap in elder care - empowering elders, not replacing them.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 🚀 Live Demo
+`https://caresaathi.vercel.app` (deploy ke baad apna link daal dena)
 
-## React Compiler
+### ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **👴 Elder Approval System:** Caretaker can only REQUEST edits, Elder APPROVES. Elder is the boss.
+- **🚨 3-Level Missed Dose Escalation:** Level 1: Reminder to Elder → Level 2: Email to Caretaker → Level 3: SOS to Family Circle
+- **📊 Weekly AI Report (Gemini):** Adherence % + missed summary + next appointments
+- **👨‍👩‍👧 Family Circle Code:** One code to connect whole family, with Activity Log
+- **📸 Prescription Scan (Gemini Vision):** Upload prescription, auto-add medicines
+- **🌐 Multilingual:** English, हिंदी, Hinglish
+- **💊 5 Demo Medicines + 2 Demo Appointments** pre-loaded for judges
 
-## Expanding the Oxlint configuration
+### 🛠️ Tech Stack
+- React + Vite
+- Tailwind CSS + Framer Motion
+- Gemini AI (Vision + Text)
+- LocalStorage for demo (No backend needed)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 🎯 Problem it Solves
+60% elders miss medicines. Existing apps either isolate elders or let family take control. CareSaathi keeps family in loop but elder in control.
+
+### 📱 How to Use
+1. Create Circle as Elder → Get Circle Code
+2. Family joins as Caretaker using Code
+3. Track medicines, appointments, activity together
+
+### 👩‍💻 Built for Catalyst Hackathon 2026
